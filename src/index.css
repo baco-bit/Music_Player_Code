@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family:arial;
+  background-color: #2d2d2d;
+  background-image:url("./mario.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.container {
+  position: relative;
+  width: 550px; 
+  height: auto;
+  max-height: 650px;
+  background-color: black;
+  opacity: 93%;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: .2s ease-in-out;
+}
+
+.container:hover{
+  opacity:99%;
+  transform:scale(1.05);
+}
+
+.lista_canciones {
+  width: 100%;
+  max-height: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.canciones {
+  height: 25px;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(39, 39, 39, 0.95);
+}
+
+.canciones:hover {
+  color:black;
+  font-weight: bold;
+  background-color: white;
+}
+
+footer {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  background-color: rgb(26, 26, 26);
+  height: 45px;
+  padding: 20px 0 10px 0;
+}
+
+.boton_play {
+  font-size: 50px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.boton_play:hover {
+  transform: scale(1.1);
+}
+
+.botonera {
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.botonera:hover {
+  transform: scale(1.1);
+}
+
+.index_cancion {
+  font-weight: 600;
+  color: grey;
+  margin-right: 8px;
+}
+
+.activo .index_cancion {
+  color: white;
+}
+
+.activo {
+  background-color: #22b355;
+  color: white;
+  font-weight: 600;
+}
+
+.activo:hover {
+  background-color: #1a9143;
+}
+
+.scroll {
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.scroll::-webkit-scrollbar-track {
+
+  background-color: black;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  
+  background-color: green;
+}
