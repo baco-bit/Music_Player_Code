@@ -8,26 +8,23 @@ body {
   min-height: 100vh;
   color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   letter-spacing: 1px;
 }
 
 .container {
   position: relative;
-  width: 550px; 
-  height: auto;
+  width: 545px; 
+  height: 555px;
+  margin-top: 54px;
+  margin-left: 80px;
   max-height: 650px;
-  background-color: black;
   opacity: 93%;
-  border-radius: 25px;
+  border: solid black;
+  border-radius: 55px;
   overflow: hidden;
   transition: .2s ease-in-out;
-}
-
-.container:hover{
-  opacity:99%;
-  transform:scale(1.05);
 }
 
 .lista_canciones {
@@ -56,7 +53,7 @@ footer {
   justify-content: center;
   align-items: center;
   bottom: 0;
-  background-color: rgb(26, 26, 26);
+  background: rgb(0, 0, 0);
   height: 45px;
   padding: 20px 0 10px 0;
 }

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { handleMusic } from './ayudante';
+import { handleMusic } from './Controles';
 import { Fetch } from './Fetch';
 
 export const Contenedor = () => {
